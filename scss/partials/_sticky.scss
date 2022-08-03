@@ -1,0 +1,25 @@
+.stickyIndex{
+    display: inline-block;
+    position: sticky;
+    top: 300px;
+    left:5%;
+    background-color: darken($fondo ,25% );
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px #a5a5a5;
+    transition: all .5s;
+    &:active{
+        background-color:#000000 ;
+    }
+    i{
+        padding: 6px;
+        transition: all .5s;
+        &:active{
+            color: darken($fondo ,25% );
+        }
+    }
+    ul{
+        background-color: darken($fondo ,25% );
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px #a5a5a5;
+    }
+}

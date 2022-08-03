@@ -1,0 +1,9 @@
+@import "../base/vars";
+@mixin fondoImgXL($img) {
+    background-image: url("../multimedia/#{$img}.jpg");
+    background-repeat: no-repeat;
+}
+@mixin fondoImgXS($img) {
+    background-image: url("../multimedia/#{$img}.jpg");
+    background-repeat: no-repeat;
+}

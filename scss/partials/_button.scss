@@ -1,0 +1,10 @@
+@import "../base/vars";
+@mixin buttonSolid($color){
+    background-color: nth($color-palete , 1 );
+    color:lighten($color, 50%)
+}
+@mixin buttonTransparent($color){
+    background-color: transparent;
+    border: 3px solid $color;
+    color:$color;
+}
