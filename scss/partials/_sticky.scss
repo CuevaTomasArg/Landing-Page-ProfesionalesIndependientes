@@ -1,10 +1,12 @@
 .stickyIndex{
     display: inline-block;
     position: sticky;
-    top: 300px;
+    top: 112px;
+    bottom:1000px;
     left:5%;
-    background-color: darken($fondo ,25% );
+    background-color:  darken($fondo ,25% );
     border-radius: 50%;
+    border: 2px solid darken($fondo ,30% );
     box-shadow: 2px 2px 10px #a5a5a5;
     transition: all .5s;
     &:active{

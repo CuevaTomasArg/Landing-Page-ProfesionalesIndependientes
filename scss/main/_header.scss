@@ -1,5 +1,6 @@
 @import "../base/vars";
 @import "../partials/button";
+@import "../partials/extends";
 header{
     background-color: $color-base;
     .navbar-expand-lg{
@@ -11,6 +12,15 @@ header{
         font-family: 'Actor', sans-serif;
         a{
             color: nth($color-palete, 1 );
+        }
+        .aInteraccion{
+            transition: all .5s;
+            &:hover{
+                background: linear-gradient(to left,$color-base,lighten(nth($color-palete, 2 ), 10%) 80%,$color-base) ;
+            }
+            &:active{
+                background: lighten(nth($color-palete, 2 ), 10%);
+            }
         }
         i{
             color: nth($color-palete,1 );
@@ -28,8 +38,8 @@ header{
             }
         }
         .flex-end{
-            margin: auto 24px auto auto;
-            display: flex;
+            margin: auto;
+            @extend %flex;
             flex-direction: row;
             justify-content: space-evenly;
             @media only screen and (max-width:992px){
@@ -37,7 +47,12 @@ header{
                 align-items: center;
             }
             li{
-                margin: auto 16px;
+                width: 100%;
+                text-align: center;
+                .dropdown-menu{
+                    background-color: $color-base;
+                    border:none;
+                }
             }
         }
     }

@@ -9,7 +9,7 @@
         font-family:'Poppins', sans-serif;
     }
 }
-p{
+p,label{
     font-family: 'Open Sans', sans-serif;   
 }
 button{
@@ -41,3 +41,4 @@ ul{
 @import "main/header";
 @import "main/index";
 @import "main/blog";
+@import "main/footer";
