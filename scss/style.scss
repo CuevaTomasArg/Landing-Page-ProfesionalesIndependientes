@@ -1,8 +1,11 @@
+@import "base/vars";
 *{
     margin:0;
     padding:0;
 }
-@import "base/vars";
+body{
+    background-color: $fondo;
+}
 @import url('https://fonts.googleapis.com/css2?family=Actor&family=Open+Sans:wght@300;600;700&family=Poppins:wght@600;700&display=swap');
 @for $i from 1 to 6{
     h#{$i}{

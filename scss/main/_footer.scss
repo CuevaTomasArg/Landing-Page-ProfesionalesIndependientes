@@ -2,6 +2,13 @@
 @import "../partials/button";
 @import "../partials/extends";
 footer{
+    @media only screen and (min-width:1000px){
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        align-items:flex-start;
+        justify-items:center;
+    }
     >div{
         width:80%;
         margin: 16px auto;
@@ -20,6 +27,9 @@ footer{
         @extend %flex;
         flex-direction: column;
         align-items: center;
+        @media only screen and (min-width:1000px){
+            width: 80%;
+        }
         button{
             @include buttonSolid(darken($color-base,10%));
             margin: 16px auto 32px auto;

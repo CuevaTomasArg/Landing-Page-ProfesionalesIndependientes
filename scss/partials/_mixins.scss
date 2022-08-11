@@ -3,6 +3,10 @@
     background-image: url("../multimedia/#{$img}.jpg");
     background-repeat: no-repeat;
 }
+@mixin fondoImgMD($img){
+    background-image: url("../multimedia/#{$img}.jpg");
+    background-repeat: no-repeat;
+}
 @mixin fondoImgXS($img) {
     background-image: url("../multimedia/#{$img}.jpg");
     background-repeat: no-repeat;

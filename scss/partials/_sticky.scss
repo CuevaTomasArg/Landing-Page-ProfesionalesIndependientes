@@ -1,3 +1,5 @@
+@import "../base/vars";
+@import "extends";
 .stickyIndex{
     display: inline-block;
     position: sticky;
@@ -7,10 +9,15 @@
     background-color:  darken($fondo ,25% );
     border-radius: 50%;
     border: 2px solid darken($fondo ,30% );
-    box-shadow: 2px 2px 10px #a5a5a5;
+    box-shadow: 2px 2px 10px #a5a5a514;
     transition: all .5s;
     &:active{
         background-color:#000000 ;
+    }
+    @media only screen and (min-width:744px){
+        background-color: transparent;
+        border-color: transparent;
+        left:24px;
     }
     i{
         padding: 6px;
@@ -20,8 +27,21 @@
         }
     }
     ul{
-        background-color: darken($fondo ,25% );
-        border-radius: 8px;
-        box-shadow: 2px 2px 10px #a5a5a5;
+        background-color: darken($fondo ,1% );
+        border-radius: 4px;
+        box-shadow: 2px 2px 10px #a4a4a47e;
+    }
+    .dropdown-menu{
+        @media only screen and (min-width:744px){
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+    }
+    button{
+        @media only screen and (min-width:744px){
+            display:none
+        }
     }
 }
